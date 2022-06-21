@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    background: rgb(172, 229, 240);
+    color: rgb(32, 18, 32);
+}
+
+.conteiner {
+    max-width: 750px;
+    margin: auto;
+}
+
+.avatar {
+    box-shadow: 6px 6px 18px rgba(27, 86, 121, 0.5);
+    width: 150px;
+    border-radius: 28px;
+
+}
+.info-text p  {
+    font-style: italic;
+    font-weight: bold;
+    color: #86898f;
+}
+
+.card {
+    color: #4b5261;
+    background: rgba(27, 86, 121, 0.5);
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+
+.bg-yellow {
+    background: #fff9dc;
+}
+.bg-green {
+    background: #e5ffe7;
+}   
+.info {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+}
+@media (max-width:618px) {
+    .info {
+        display: block;
+    }
+    a {
+        margin: 5px;
+    }
+}
+@media (max-width:489px){
+    .info-text a{
+        margin: 10px 5px;
+        display: block;
+        text-align: center;
+    }
+}
+
+.info-text {
+    margin-left: 20px;
+    
+}
+
+a, .btn {
+    box-shadow: 6px 6px 18px rgba(27, 86, 121, 0.5);
+    color: #4b5261;
+    background: rgba(27, 86, 121, 0.5);
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    transition: all .2s;
+    border: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    font-size: 1.5rem;
+    box-shadow: 6px 6px 18px rgba(47, 168, 237, 0.5);
+    color: #0c1321;
+    background: rgba(47, 168, 237, 0.5);
+}
+
+a:active{
+    color: rgb(21, 21, 18);
+}
+
+.btn:hover {
+    text-decoration: underline;
+    font-size: 1.5rem;
+    box-shadow: 6px 6px 18px rgba(47, 168, 237, 0.5);
+    color: #0c1321;
+    background: rgba(47, 168, 237, 0.5);
+    opacity: .5;
+}
+
+.btn:active{
+
+    color: rgb(21, 21, 18);
+}
+.form {
+   text-align: center;
+}
+.form-group label{
+    padding-left: 200px;
+    text-align: left;
+    display: block;
+    font-size: 14px;
+    color: #4b5261;
+}
+.form-group input,
+.form-group textarea {
+    width: 50%;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+    box-shadow: 6px 6px 14px rgba(27, 86, 121, 0.5);
+    color: #4b5261;
+    outline: none;
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    transition: all .2s;
+    border: none;
+}
+
+
+.table{
+    width: 100%;
+    
+    border: none;
+    
+}
+
+.table td {
+    padding-bottom: 10px;
+}
+
+
+.list {
+    padding: 0 20px;
+}
+.list li {
+    margin-bottom: 10px;
+
+}
+

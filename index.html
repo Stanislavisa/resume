@@ -6,46 +6,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="html, css, js">
     <meta name="description" content="'Сайт резюме" >
+    <link rel="stylesheet" href="./css/sryle.css">
     <title>Сайт резюме</title>
 </head>
-<body>
+<body> 
+<div class="conteiner">
     <header>
-        <img src="./img/IMG_20210625_163735_253.jpg" alt="моё фото" width="150">
-        <h1>Станислав Изотов</h1>
-        <a href="./mysayt/glavny.html" target="_blank">мои самый первый сайт</a>
-        <a href="./test —/index.html" target="_blank" > мое первое тестовое задание</a>
+        <div class="info "> 
+            <img src="./img/IMG_20210625_163735_253.jpg" alt="моё фото" class="avatar">
+            
+            <div class="info-text">
+                <h1>Станислав Изотов</h1>
+       
+             <a href="./mysayt/glavny.html" target="_blank">мои самый первый сайт</a>
+            
+             <a href="./test —/index.html" target="_blank" > мое первое тестовое задание</a>
    
-     <p>
-        Я начинаюзий разработчик, но уже многое умею, на этой странице у вас есть возможность посетить разделы и увидеть мои работы.
-     </p>
+             <p>
+              Я начинаюзий разработчик, но уже многое умею, на этой странице у вас есть возможность посетить разделы и увидеть мои работы.
+              </p>
+             <a href="https://tele.click/{stanislavisa}" class="contact" target="_blank">telegram</a>
+             <a href="mailto:sa.izotov@yandex.ru" class="contact" target="_blank">моя почта</a>
+            </div>
+          
+        </div>
     </header>
+
+    <hr>
+
     <section>
-        <p>
-        <h3>Мои увлечения:</h3>
-        
-         <strong> Люблю путешевствовать,</strong>
-         <br>
-         <em> Люблю автомобили и все что с ними связано,</em>
-         <br>
-         Люблю программировать и изучать новое в этом направлении.
-         <hr>
-         </p>
+
+        <div class="card bg-yellow">
+         <h3>Мои увлечения:</h3>
+            <p>
+             <strong> Люблю путешевствовать,</strong>
+             <br>
+             <em> Люблю автомобили и все что с ними связано,</em>
+             <br>
+             Люблю программировать и изучать новое в этом направлении.
+             
+             </p>   
+             
+        </div>
+            
+        <div class="card bg-green">
+
          <h3>Мои хобби</h3>
-         <ol>
+         <ol class="list">
            <li>Путешествия</li>
            <li>Программирование</li>
            <li>Прогулки на свежем воздухе</li>
            <li>Плавание</li>
          </ol>
+        </div>
      <hr>
-     <table>
-         <thead>
-          <tr>
-             <th>Название</th>
-             <th>Должность</th>
-             <th>Год</th> 
-          </tr>
-         </thead>
+            <h3>Опыт работы</h3>
+     <table class="table">
+         <!--   <thead>
+            <tr>
+                <th>Название</th>
+                <th>Должность</th>
+                <th>Год</th> 
+            </tr>
+            </thead>-->
  
          <tbody>
              <tr>
@@ -75,42 +98,44 @@
           </tr>
          </tbody>
      </table>
-     <hr>
-        <h3>Связаться со мной</h3>
- 
-     <form action="/">
-         <div>
-             <label for="name">Имя</label>
-             <input type="text" id="name" placeholder="Ваше имя">
-         </div>
- 
-         <div>
-             <label for="email">Email</label>
-             <input type="email" id="email" placeholder="Ваш email">
-         </div>
- 
-         <div>
-             <label for="tel">Телефон</label>
-             <input type="tel" id="tel" maxlength="11" placeholder="Ваш телефон">
-         </div>
- 
-         <div>
-             <label for="message">Ваше сообщение</label>
-             <br>
-             <textarea id="message" cols="30" rows="5" placeholder="Введите ваше сообщение  . . ."></textarea>
-         </div>
-         
-         <button type="submit">отправить</button>
-         
-     </form>
- 
-        <hr>
-    </section>
-     
-    <footer>
 
-        <a href="https://tele.click/{stanislavisa}" target="_blank">telegram</a>
-        <a href="mailto:sa.izotov@yandex.ru" target="_blank">моя почта</a>
-    </footer>
+     <hr>
+
+        
+ 
+        <form action="/" class="form">
+
+            <h3>Связаться со мной</h3>
+
+         <div class="form-group">
+             <label for="name">Имя</label>
+             <input class="form" type="text" id="name" placeholder="Ваше имя">
+         </div>
+ 
+         <div  class="form-group">
+             <label for="email">Email</label>
+             <input class="form" type="email" id="email" placeholder="Ваш email">
+         </div>
+ 
+         <div class="form-group">
+             <label for="tel">Телефон</label>
+             <input  class="form" type="tel" id="tel" maxlength="11" placeholder="Ваш телефон">
+         </div>
+ 
+         <div class="form-group">
+             <label for="message">Ваше сообщение</label>
+             <textarea class="form" id="message" cols="30" rows="5" placeholder="Введите ваше сообщение  . . ."></textarea>
+         </div>
+         
+         <button type="submit" class="btn">отправить</button>
+         
+        </form>
+ 
+        
+          
+    </section>
+             
+
+</div>   
 </body>
 </html>
